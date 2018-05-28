@@ -7,4 +7,9 @@ describe('Hello World', function () {
   	const expected = 'Hello, World!';
     expect(helloWorld.hello()).toEqual(expected);
   });
+  
+  it('says length of String ', function() {
+	 const expected = 5;
+	 expect(helloWorld.lengthOfString('Hello')).toEqual(expected);
+  });
 });
