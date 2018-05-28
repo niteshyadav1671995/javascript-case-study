@@ -6,4 +6,5 @@ var HelloWorld = function(){
 		return input.length;
 	}
 }
+
 module.exports = HelloWorld;
