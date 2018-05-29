@@ -15,7 +15,6 @@ describe('guy', function () {
 
   it('shouting gibberish', function () {
     var result = guy.hey('FCECDFCAAB');
-  
     expect(result).toEqual('Whoa, chill out!');
   });
 
@@ -84,12 +83,12 @@ describe('guy', function () {
     expect(result).toEqual('Sure.');
   });
 
-  xit('silence', function () {
+  it('silence', function () {
     var result = guy.hey('');
     expect(result).toEqual('Fine. Be that way!');
   });
 
-  xit('prolonged silence', function () {
+  it('prolonged silence', function () {
     var result = guy.hey('   ');
     expect(result).toEqual('Fine. Be that way!');
   });

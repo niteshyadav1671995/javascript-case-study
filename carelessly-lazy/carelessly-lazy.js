@@ -1,20 +1,23 @@
+'use strict';
 function lazyGuy() {
-    this.hey = function(message){
+    this.hey = function(message) {
       var reply="";
       var exclamation = message.match(/!/g);
       var uppercase = message.match(/[A-Z]/g);
+      if(message.trim()==""){
+        return "Fine. Be that way!";
+      }
      if(message.endsWith("?")){
         reply="Sure.";
         return reply;
       }
-      if(exclamation!=null){
+      if(/!/.test(message)){
+        console.log(message);
         reply="Whoa, chill out!";
         return reply;
       }
-      if(uppercase !=null){
-        reply="Whoa, chill out!";
-        return reply;
-      }
+
+
       reply="Whatever.";
       
     }
